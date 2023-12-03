@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0110)https://d9krvhtoq7yti.cloudfront.net/#CjQKIMemtODcX9MFI1ZbwMSbb1UzkrlHpNmXhSx0Ys-Tc3TOEhAzc69-jbjBv4XWiP4OtReq -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex">
+
+    <title>千里传音群组</title>
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+    <link type="text/css" rel="stylesheet" href="./files/bulma-0.8.0.min-ccf7949cbe2c285e72f3a5c936d8abba9270e77d27b2529804ff4738dda4944e.css">
+    <link type="text/css" rel="stylesheet" href="./files/ultramarine-2ff4c5d93cbc34c0a2f2e51c05658a2d2ddce95ab9ad26efebc875b46347b5ba.css">
+  </head>
+
+  <body id="signal" class="index has-navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar signal-navbar is-fixed-top" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="https://qianli.chat" style="font-size: 30px;">
+            <img class="signal-logo" src="./files/qianli-logo.png" style="width: 40px; height: 40px;"> 千里传音
+          </a>
+
+          <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="signalNavbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="signalNavbar" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item get-signal" href="https://qianli.chat">下载千里传音</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main">
+      <section class="section">
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-4">
+      <img src="./files/group_phone-a5e93cac2373216d623923c9f7515ed0ec16b762b6f0d26e5963b4ec5ad7f250.png">
+
+      <p class="body1">
+        千里传音群组
+      </p>
+
+      <p id="join-button">
+        <button class="button button-large" style="margin: 24px 0">
+          <a href="qlcy://group.qianli.chat/" id="go-to-group" class="no-underline">
+            加入群组
+          </a>
+        </button>
+      </p>
+
+      <p class="stickers">
+	      还没安装? <a href="https://qianli.chat">前往下载</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<script type="application/javascript">
+  function doRedirect() {
+    if (window.location.hash) {
+      var redirect = "qlcy://group.qianli.chat/" + window.location.hash;
+      document.getElementById('go-to-group').href = redirect;
+      window.location = redirect;
+    } else {
+      document.getElementById('join-button').innerHTML = "未找到群组";
+    }
+  }
+
+  window.onload = doRedirect;
+</script>
+
+    </div>
+
+<script type="text/javascript">
+  const $langSelectors = Array.prototype.slice.call(document.querySelectorAll('a[data-lang]'));
+
+  $langSelectors.forEach((el) => {
+    el.addEventListener('click', (ev) => {
+      const lang = ev.getAttribute('data-lang');
+
+      if (lang) {
+        document.cookie = 'selected_language=' + lang + '; samesite; secure; path=/; max-age=7776000;';
+      }
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'));
+    if ($navbarBurgers.length > 0) {
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener('click', () => {
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>
+
+  
+
+</body></html>
